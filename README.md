@@ -1,1 +1,1 @@
-https://github.com/rendertip/posmotri-v-okno.git
+https://github.com/rendertip/posmotri-v-okno-fd

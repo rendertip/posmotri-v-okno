@@ -55,7 +55,6 @@ ol {
 
 .content {
   width: 1140px;
-  height: 534px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -78,7 +77,7 @@ ol {
   font-size: 75px;
   font-weight: 700;
   letter-spacing: 0;
-  line-height: 70px;
+  line-height: 0.94;
   text-transform: uppercase;
 }
 
@@ -91,9 +90,8 @@ ol {
   display: flex;
   flex-direction: column;
   /* margin-top: auto; */
-  height: 399px;
-  overflow-y: auto; /* только вертикальный скролл */
-  overflow-x: hidden; /* запрет горизонтального */
+  height: 298px;
+  overflow: auto;
   gap: 30px;
 }
 
@@ -115,10 +113,6 @@ ol {
   cursor: pointer;
 }
 
-.content__video-card:active {
-  background-color: #545050;
-}
-
 .content__video-card-description-container {
   flex-grow: 1;
   max-width: 195px;
@@ -132,7 +126,7 @@ ol {
   overflow: hidden;
   white-space: normal;
   overflow-wrap: break-word;
-  line-height: 20.2px;
+  line-height: 1.23;
 }
 
 .content__video-card-thumbnail {
@@ -148,7 +142,7 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
 
@@ -158,6 +152,10 @@ ol {
   display: block;
   text-decoration: none;
   color: #fff;
+}
+
+.content__card-link:active {
+  background-color: #545050;
 }
 
 .content__card-link:focus {
@@ -198,7 +196,6 @@ ol {
 .search-form {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   gap: 40px;
   align-items: flex-start;
 }
